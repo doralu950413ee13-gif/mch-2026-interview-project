@@ -1,0 +1,52 @@
+/* API Docs Styles */
+.api-docs-section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.docs-header {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #eee;
+}
+
+.docs-header h2 {
+  margin: 0 0 0.5rem 0;
+  color: #1a1a1a;
+}
+
+.docs-header p {
+  margin: 0;
+  color: #666;
+}
+
+.swagger-container {
+  width: 100%;
+  height: 800px;
+}
+
+.swagger-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.docs-footer {
+  padding: 1rem 2rem;
+  background: #f8f9fa;
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.docs-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.docs-footer a:hover {
+  text-decoration: underline;
+}
