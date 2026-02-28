@@ -29,7 +29,7 @@ const SelfIntro = () => {
           <div className="profile-photo">
             {/* 照片已移動至 public/my-photo.JPG */}
             <img 
-              src="/my-photo.JPG" 
+              src={`${import.meta.env.BASE_URL}my-photo.JPG`} 
               alt="呂向荷" 
             />
           </div>
@@ -93,28 +93,28 @@ const SelfIntro = () => {
         <div className="photo-wall-viewport">
           <div className="photo-wall-track">
             {[
-              "/IMG_9331.JPG",
-              "/IMG_9332.JPG",
-              "/P1040941.JPG",
-              "/P1040997.JPG",
-              "/P1050022.JPG",
-              "/P1050023.JPG"
-            ].map((url, index) => (
+              "IMG_9331.JPG",
+              "IMG_9332.JPG",
+              "P1040941.JPG",
+              "P1040997.JPG",
+              "P1050022.JPG",
+              "P1050023.JPG"
+            ].map((filename, index) => (
               <div key={`photo-${index}`} className="photo-item">
-                <img src={url} alt={`Photo ${index + 1}`} />
+                <img src={`${import.meta.env.BASE_URL}${filename}`} alt={`Photo ${index + 1}`} />
               </div>
             ))}
             {/* 重複一次圖片序列以達成無縫捲動 */}
             {[
-              "/IMG_9331.JPG",
-              "/IMG_9332.JPG",
-              "/P1040941.JPG",
-              "/P1040997.JPG",
-              "/P1050022.JPG",
-              "/P1050023.JPG"
-            ].map((url, index) => (
+              "IMG_9331.JPG",
+              "IMG_9332.JPG",
+              "P1040941.JPG",
+              "P1040997.JPG",
+              "P1050022.JPG",
+              "P1050023.JPG"
+            ].map((filename, index) => (
               <div key={`photo-dup-${index}`} className="photo-item">
-                <img src={url} alt={`Photo ${index + 1}`} />
+                <img src={`${import.meta.env.BASE_URL}${filename}`} alt={`Photo ${index + 1}`} />
               </div>
             ))}
           </div>
